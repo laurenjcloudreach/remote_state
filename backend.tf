@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "laurenjcloudreachmybucket"
-    key            = "projects/ec2/ec2-terraform.tfstates"
+    bucket         = "laurenjcloudreachs3"
+    key            = "projects/s3backend/terraform.tfstates"
     region         = "us-east-1"
-    dynamodb_table = "terraform-lock"
+    dynamodb_table = "terraform-state-lock-dynamo"
   }
 }
